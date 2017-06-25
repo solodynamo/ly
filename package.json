@@ -1,15 +1,15 @@
 {
-  "name": "ly",
-  "version": "0.0.1",
+  "name": "lyc",
+  "version": "0.0.5",
   "description": "Tells lyrics!",
-  "main": "index.js",
+  "main": "bin/ly.js",
   "scripts": {
     "test": "npm run test",
-    "sing": "node --require babel-polyfill ./bin/ly.js",
+    "sing": "node ./bin/ly.js",
     "build": "babel src -d lib"
   },
   "bin": {
-    "ly": "bin/ly.js"
+    "lyc": "bin/ly.js"
   },
   "repository": {
     "type": "git",

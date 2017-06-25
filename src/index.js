@@ -6,7 +6,7 @@ import minimist from 'minimist';
 import cheerio from 'cheerio';
 import updateNotifier from 'update-notifier';
 import _ from 'underscore';
-import pkg from './package.json';
+import pkg from '../package.json';
 
 updateNotifier({pkg}).notify()
 
