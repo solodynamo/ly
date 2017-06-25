@@ -1,13 +1,15 @@
 {
   "name": "ly",
   "version": "0.0.1",
-  "description": "Tells lyrics !",
+  "description": "Tells lyrics!",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "sing": "node --require babel-polyfill ./bin/ly.js",
+    "build": "babel src -d lib"
   },
   "bin": {
-    "sing": "./index.js"
+    "ly": "bin/ly.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
     "blah"
   ],
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "cheerio": "latest",
     "get-stdin": "latest",
     "minimist": "latest",
@@ -29,9 +32,13 @@
     "update-notifier": "latest"
   },
   "author": "solodynamo",
-  "license": "apache",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/solodynamo/ly/issues"
   },
-  "homepage": "https://github.com/solodynamo/ly#readme"
+  "homepage": "https://github.com/solodynamo/ly#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
 }
