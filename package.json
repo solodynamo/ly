@@ -1,0 +1,37 @@
+{
+  "name": "ly",
+  "version": "0.0.1",
+  "description": "Tells lyrics !",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "bin": {
+    "sing": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodynamo/ly.git"
+  },
+  "keywords": [
+    "lyrics",
+    "ly",
+    "sing",
+    "song",
+    "blah"
+  ],
+  "dependencies": {
+    "cheerio": "latest",
+    "get-stdin": "latest",
+    "minimist": "latest",
+    "request": "latest",
+    "underscore": "latest",
+    "update-notifier": "latest"
+  },
+  "author": "solodynamo",
+  "license": "apache",
+  "bugs": {
+    "url": "https://github.com/solodynamo/ly/issues"
+  },
+  "homepage": "https://github.com/solodynamo/ly#readme"
+}
